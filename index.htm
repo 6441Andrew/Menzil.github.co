@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quering</title>
+</head>
+<style>
+    container{
+        border: 2px solid firebrick;
+        height: 400px;
+        width: 400px;
+    }
+  @media screen and (max-width: 500px) { 
+      h1{
+          color: blueviolet;
+          text-align: center;
+      }
+      p{
+          color: blue;
+      }
+
+  }
+  /*
+  body{
+      overflow-y: hidden;
+  }
+  */
+</style>
+<body>
+    <h1>I love maseno</h1>
+    <p>very much</p>
+    <div class="container">
+    <svg xmlns="http:www.w3.org/2000/svg" version="1.1" width="1000" height="1000">
+        <text x="100" y="200" fill="pink" stroke="purple" stroke-width="2" style="font-size: 100px; ">Menzil company</text> 
+    </svg>
+    <svg xmlns="http:www.w3.org/2000/svg" version="1.1" width="1000" height="1000">
+        <path d="M 100 100 L 100 300 M 250 100 L 250 300 M 400 100 L 400 300 M 550 100 L 550 300 M 700 100 L 700 300 M 850 100 L 850 300"
+         fill="transparent" stroke-width="45" stroke="#333"/>
+        <animate dur="2s" attributeName="width" values=" 0; 200; 400; 600; 800; 1000" repeatCount="indefinite"/>  
+    </svg>
+    </div>
+</body>
+</html>
